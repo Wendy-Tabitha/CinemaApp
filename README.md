@@ -1,4 +1,4 @@
-# CineScope
+# CinemaApp
 
 CineScope is a modern web application for discovering, searching, and exploring movies and TV shows. It leverages The Movie Database (TMDB) as the primary data source and uses OMDB as a fallback for additional or missing movie information. The app also features an AI-powered recommendation engine using Gemini.
 
