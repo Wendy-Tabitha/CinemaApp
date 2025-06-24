@@ -9,12 +9,12 @@ export async function generateMetadata({ params }) {
   try {
     const show = await getTvDetails(params.id);
     return {
-      title: `${show.name} - CineScope`,
+      title: `${show.name} - CinemaApp`,
       description: show.overview,
     };
   } catch (error) {
     return {
-      title: 'TV Show Not Found - CineScope',
+      title: 'TV Show Not Found - CinemaApp',
     };
   }
 }

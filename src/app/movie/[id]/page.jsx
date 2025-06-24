@@ -10,11 +10,11 @@ export async function generateMetadata({ params }) {
   try {
     const movie = await getMovieDetails(resolvedParams.id);
     return {
-      title: `${movie.title} - CineScope`,
+      title: `${movie.title} - CinemaApp`,
       description: movie.overview,
     };
   } catch {
-    return { title: 'Movie Not Found - CineScope' };
+    return { title: 'Movie Not Found - CinemaApp' };
   }
 }
 

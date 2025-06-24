@@ -1,4 +1,4 @@
-# **App Name**: CineScope
+# **App Name**: CinemaApp
 
 ## Core Features:
 
