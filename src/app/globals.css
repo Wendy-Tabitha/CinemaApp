@@ -1,0 +1,64 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 240 10% 3.9%;
+    --foreground: 0 0% 98%;
+    --card: 240 4% 9%;
+    --card-foreground: 0 0% 98%;
+    --popover: 240 10% 3.9%;
+    --popover-foreground: 0 0% 98%;
+    --primary: 240 67% 94%; /* Soft Lavender */
+    --primary-foreground: 275 100% 15%; /* Darker Indigo for text on lavender */
+    --secondary: 240 3.7% 15.9%;
+    --secondary-foreground: 0 0% 98%;
+    --muted: 240 3.7% 15.9%;
+    --muted-foreground: 240 5% 64.9%;
+    --accent: 275 80% 80%; /* Bright Indigo */
+    --accent-foreground: 0 0% 98%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 240 4% 25%;
+    --input: 240 4% 25%;
+    --ring: 240 67% 94%; /* Soft Lavender */
+    --radius: 0.5rem;
+    
+    /* Custom Colors from proposal */
+    --cinescope-indigo: 275 100% 25%; /* #4B0082 */
+    --cinescope-dark-gray: 0 0% 13.3%; /* #222222 */
+    --cinescope-lavender: 240 67% 94%; /* #E6E6FA */
+  }
+
+  .dark {
+    --background: var(--cinescope-dark-gray); /* #222222 */
+    --foreground: 0 0% 98%;
+    --card: 228 6% 18%; /* A bit lighter than background */
+    --card-foreground: 0 0% 98%;
+    --popover: var(--cinescope-dark-gray);
+    --popover-foreground: 0 0% 98%;
+    --primary: var(--cinescope-lavender); /* #E6E6FA */
+    --primary-foreground: 275 100% 20%; /* Dark Indigo */
+    --secondary: 240 3.7% 20%;
+    --secondary-foreground: 0 0% 98%;
+    --muted: 240 3.7% 20%;
+    --muted-foreground: 240 5% 64.9%;
+    --accent: 275 80% 80%; /* Brighter Indigo */
+    --accent-foreground: 0 0% 98%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 240 4% 25%;
+    --input: 240 4% 25%;
+    --ring: var(--cinescope-lavender);
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
