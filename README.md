@@ -84,7 +84,7 @@ CineScope/
 
 ```bash
 git clone https://github.com/Wendy-Tabitha/CinemaApp.git
-cd CineScope
+cd CinemaApp
 ```
 
 ### 2. Install Dependencies
